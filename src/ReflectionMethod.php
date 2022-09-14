@@ -203,7 +203,7 @@ class ReflectionMethod extends BaseReflectionMethod
     /**
      * {@inheritDoc}
      */
-    public function invoke($object, $args = null)
+    public function invoke(?object $object, mixed ...$args)
     {
         $this->initializeInternalReflection();
 
